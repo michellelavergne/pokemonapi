@@ -21,8 +21,34 @@ img {
 body {
   margin: auto;
   text-align: center;
+  background: #ef5350;
+  font-family: "Roboto", sans-serif;
 }
 
 section {
-  margin: 20%;
+  margin: 5%;
+  padding: 2%;
+  background: #ffcb05;
+  border: 25px solid #2c74ba;
+}
+
+.pokeLogo {
+  width: auto;
+  height: 250px;
+  margin: auto;
+  margin-top: 5%;
+}
+
+input {
+  background: #ffcb05;
+  border: 3px solid #ef5350;
+  width: 525px;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  background: #2c74ba;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  height: 28px;
 }
