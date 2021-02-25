@@ -2,7 +2,7 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
-  const poke1 = document.querySelector('#poke1').value
+  const poke1 = document.querySelector('#poke1').value.toLowerCase()
   const url = 'https://pokeapi.co/api/v2/pokemon/'+poke1
   let pokeStore = []
   let pokeImg = []
