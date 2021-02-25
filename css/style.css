@@ -44,6 +44,7 @@ input {
   border: 3px solid #ef5350;
   width: 525px;
   font-family: "Roboto", sans-serif;
+  margin: 2% 0 2% 0;
 }
 
 button {
@@ -51,4 +52,19 @@ button {
   font-family: "Roboto", sans-serif;
   border: none;
   height: 28px;
+  font-weight: 900;
+}
+
+.hidden {
+  /* display: none; */
+}
+
+label {
+  padding: 2%;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+footer {
+  margin: 5% 0 1% 0;
 }
