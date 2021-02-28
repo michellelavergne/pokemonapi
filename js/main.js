@@ -1,9 +1,9 @@
-//Example fetch using pokemonapi.co
+//Event Listener
 document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
-  const poke1 = document.querySelector('#poke1').value.toLowerCase()
-  const url = 'https://pokeapi.co/api/v2/pokemon/'+poke1
+  const monster = document.querySelector('#monster').value.toLowerCase()
+  const url = 'https://www.dnd5eapi.co/api/monsters/'+monster
   let pokeStore = []
   let pokeImg = []
 
@@ -12,15 +12,15 @@ function getFetch(){
       .then(data => {
           console.log(data)
         
-        pokeStore.push(data.types[0].type.name)
-        document.querySelector('#name').innerText = data.name.toUpperCase()
-        document.querySelector('#weight').innerText = `${data.weight} kg`
-        document.querySelector('#type').innerText = pokeStore[0]
-        pokeImg.push(data.sprites.front_shiny)
-        document.querySelector('#pokeImg1').src = data.sprites.front_shiny
-        document.querySelector('#height').innerText = `${data.height} ft`
-        document.querySelector('#ability').innerText = data.abilities[0].ability.name
-        document.querySelector('label').style.display = toggle
+        // pokeStore.push(data.types[0].type.name)
+        // document.querySelector('#name').innerText = data.name.toUpperCase()
+        // document.querySelector('#weight').innerText = `${data.weight} kg`
+        // document.querySelector('#type').innerText = pokeStore[0]
+        // pokeImg.push(data.sprites.front_shiny)
+        // document.querySelector('#pokeImg1').src = data.sprites.front_shiny
+        // document.querySelector('#height').innerText = `${data.height} ft`
+        // document.querySelector('#ability').innerText = data.abilities[0].ability.name
+        // document.querySelector('label').style.display = toggle
         
         
         
